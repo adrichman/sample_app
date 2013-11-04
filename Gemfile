@@ -3,7 +3,7 @@ ruby '2.0.0'
 #ruby-gemset=railstutorial_rails_4_0
 
 gem 'rails', '4.0.1'
-gem'bootstrap-sass', '2.3.2.0'
+gem 'bootstrap-sass', '2.3.2.0'
 gem 'bcrypt-ruby', '3.1.2'
 gem 'faker', '1.1.2'
 gem 'will_paginate', '3.0.4'
@@ -12,6 +12,7 @@ gem 'bootstrap-will_paginate', '0.0.9'
 group :development, :test do
 	gem 'sqlite3', '1.3.8'
 	gem 'rspec-rails', '2.13.1'
+	gem 'guard-rspec', '2.5.0'
 	# the following optional lines are part of the advanced setup
 	# gem 'guard-rspec', '2.5.0'
 	# gem 'spork-rails', '4.0.0'
@@ -25,8 +26,10 @@ group :test do
 	gem 'factory_girl_rails', '4.2.0'
 	gem 'cucumber-rails', '1.4.0', :require => false
 	gem 'database_cleaner', github: 'bmabey/database_cleaner'
-
 	gem 'growl', '1.0.3'
+	gem 'spork-rails', '4.0.0'
+	gem 'guard-spork', '1.5.0'
+	gem 'childprocess'
 end
 
 gem 'sass-rails', '4.0.1'
